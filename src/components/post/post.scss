@@ -1,0 +1,79 @@
+
+.containerr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.post {
+    position: relative;
+    &__item {
+        margin-top: 135px;
+        width: 1660px;
+        min-height: 455px;
+        background-color: #fff;
+        padding: 0 133px;
+        padding-bottom: 50px;
+        
+    }
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+
+        color: #000000;
+        padding-top: 40px;
+    }
+
+    &__name {
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        text-decoration-line: underline;
+
+        color: #000000;
+        margin-top: 15px;
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+
+        color: #000000;
+        margin-top: 15px;
+    }
+
+    &__back {
+        cursor: pointer;
+        height: 24px;
+        width: 24px;
+        margin: 20px;
+        position: absolute;
+        top: -33px;
+        left: 150px;
+        span {
+            background: #757575;
+            height: 3px;
+            left: -30px;
+            position: absolute;
+            top: 60px;
+            width: 30px;
+            &:nth-child(1) {
+                top: 58px;
+                transform: rotate(45deg);
+                transform-origin: bottom left;
+            }
+            &:nth-child(2) {
+                transform: rotate(-45deg);
+                transform-origin: top left;
+            }
+        }
+    }
+}
+
